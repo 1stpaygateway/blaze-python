@@ -240,3 +240,6 @@ class RestGateway:
         self.apiRequest = urljoin(self.apiUrl,"AccountUpdaterReturn")
         return(RestGateway.performRequest(self))
 
+    def creditCardChargebackQuery(self):
+          self.apiRequest = urljoin(self.apiUrl, "CreditCardChargebackQuery")
+          return(RestGateway.performRequest(self))
